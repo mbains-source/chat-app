@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import { StyleSheet, View, Text, Button, TextInput, ImageBackground, TouchableOpacity, } from 'react-native';
+//import of usestate and react-native  components
 
+
+//Background image
 const image = require('../images/Bg-Image.png');
 
+//background colors
 const backgroundColors = {
   a: '#090C08',
   b: '#474056',
@@ -10,6 +14,7 @@ const backgroundColors = {
   d: '#B9C6AE',
 };
 
+//const start
 const Start = ({ navigation }) => {
   const [name, setName] = useState('');
   const [color, setColor] = useState(backgroundColors);
@@ -79,6 +84,7 @@ const Start = ({ navigation }) => {
   );
 }
 
+//stylesheet
 const styles = StyleSheet.create({
   container: {
     flex: 1,

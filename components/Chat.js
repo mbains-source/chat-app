@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+//import of useeffect and react native components
 
+//const chat
 const Chat = ({route, navigation}) => {
   const { name } = route.params;
 
@@ -15,6 +17,7 @@ const Chat = ({route, navigation}) => {
  );
 }
 
+//const styles flexbox
 const styles = StyleSheet.create({
  container: {
    flex: 1,
