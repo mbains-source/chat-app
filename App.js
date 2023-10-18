@@ -1,19 +1,22 @@
 import { useEffect } from "react";
 
-import { Alert } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Alert } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { initializeApp } from "firebase/app";
-import { getFirestore, disableNetwork, enableNetwork } from "firebase/firestore";
+import {
+  getFirestore,
+  disableNetwork,
+  enableNetwork,
+} from "firebase/firestore";
 
-import { useNetInfo } from '@react-native-community/netinfo';
+import { useNetInfo } from "@react-native-community/netinfo";
 
-import Start from './components/Start';
-import Chat from './components/Chat';
+import { getStorage } from "firebase/storage";
 
-// Create the navigator
-const Stack = createNativeStackNavigator();
+import Start from "./components/Start";
+import Chat from "./components/Chat";
 
 const App = () => {
 
@@ -44,23 +47,23 @@ const App = () => {
     }
   }, [connectionStatus.isConnected]);
 
-
   return (
     <NavigationContainer>
-            <Stack.Navigator
-        initialRouteName="Start"
-      >
-        <Stack.Screen
-          name="Start"
-          component={Start}
-        />
-        <Stack.Screen
-          name="Chat">
-          {props => <Chat db={db} isConnected={connectionStatus.isConnected} {...props} />}
-          </Stack.Screen>
+      <Stack.Navigator initialRouteName="Start">
+        <Stack.Screen name="Start" component={Start} />
+        <Stack.Screen name="Chat">
+          {(props) => (
+            <Chat
+              db={db}
+              storage={storage}
+              isConnected={connectionStatus.isConnected}
+              {...props}
+            />
+          )}
+        </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
-}
+};
 
 export default App;
