@@ -1,4 +1,6 @@
-## Chat App 🗣
+## Chat App 
+
+🗣
 
 This is a React Native app for a chat application that allows users to chat with each other in real-time. The app is built using Firebase as the backend service provider and built 
 with React-Native on the Frontend.
