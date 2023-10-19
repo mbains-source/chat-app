@@ -36,7 +36,10 @@ with React-Native on the Frontend.
 
 - Step #1: Install Expo CLI and set up [Android Studio](https://developer.android.com/studio?gclid=EAIaIQobChMIzLjbzvmAggMVxDetBh1wwg-REAAYASAAEgI2GfD_BwE&gclsrc=aw.ds) for Android Emulation
 
-- Step #2: Firebase installation. Create a new project in Firebase Console, Configure Firestore Database and Firebase Authentication and replace the Firebase configuration in the project with your Firebase project credentials.
+- Step #2: Firebase installation.
+ - Create a new project in Firebase Console,
+ - Configure Firestore Database and Firebase Authentication
+ - Replace the Firebase configuration in the project with your Firebase project credentials.
 
 - Step #3: Install dependencies required to run the app by running the following npm terminal commands
   - npm install @react-native-async-storage/async-storage
