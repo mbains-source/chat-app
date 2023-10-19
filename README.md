@@ -1,4 +1,4 @@
-## Chat App
+## Chat App :U+1FDE3:
 
 This is a React Native app for a chat application that allows users to chat with each other in real-time. The app is built using Firebase as the backend service provider and built 
 with React-Native on the Frontend.
@@ -37,18 +37,17 @@ with React-Native on the Frontend.
 - Step #2: Firebase installation. Create a new project in Firebase Console, Configure Firestore Database and Firebase Authentication and replace the Firebase configuration in the project with your Firebase project credentials.
 
 - Step #3: Install dependencies required to run the app by running the following npm terminal commands
-  
-npm install @react-native-async-storage/async-storage
-npm install @react-native-community/netinfo
-npm install @react-navigation/native
-npm install @react-navigation/native-stack
-npm install expo
-npm install firebase
-npm install react-native
-npm install react-native-gifted-chat
-npm install react-native-safe-area-context
-npm install react-native-screens
-npm install expo-image-picker
-npm install expo-location
-npm install react-native-maps
+  - npm install @react-native-async-storage/async-storage
+  - npm install @react-native-community/netinfo
+  - npm install @react-navigation/native
+  - npm install @react-navigation/native-stack
+  - npm install expo
+  - npm install firebase
+  - npm install react-native
+  - npm install react-native-gifted-chat
+  - npm install react-native-safe-area-context
+  - npm install react-native-screens  
+  - npm install expo-image-picker
+  - npm install expo-location
+  - npm install react-native-maps
 
